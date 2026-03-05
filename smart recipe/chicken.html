@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Suggestions</title>
+
+<style>
+
+/* IMPORTANT RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f3f4f6;
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+    padding:40px 60px;
+}
+
+/* TITLE SECTION */
+.header{
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.header p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* LAYOUT */
+.layout{
+    display:flex;
+    gap:20px;
+    align-items:start-flex;
+}
+
+/* LEFT CARD */
+.card{
+    flex:2;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    display:flex;
+    gap:25px;
+}
+
+/* IMAGE */
+.card img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+/* CONTENT */
+.card-content{
+    flex:1;
+}
+
+.card-content h2{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* INGREDIENT TAGS */
+.ingredients{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.ingredients span{
+    background:#fdeaea;
+    color:#d33;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+}
+
+.btn button{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+.related{
+    flex:1;
+	
+}
+
+.related h3{
+    margin-bottom:15px;
+}
+
+.video{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.video img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.video p{
+    padding:10px;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .layout{
+        flex-direction:column;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .card img{
+        width:100%;
+        height:250px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    
+
+    <div class="layout">
+
+        <!-- LEFT -->
+        <div class="card">
+
+            <img src="https://littlesunnykitchen.com/wp-content/uploads/2023/05/Buffalo-Chicken-Salad-1-1025x1536.jpg">
+
+            <div class="card-content">
+                <h2>Chicken Salad</h2>
+                <p>
+                  Chicken Salad is a fresh and protein-rich dish made with juicy grilled chicken, crisp vegetables, and a light, flavorful dressing — perfect for a healthy and satisfying meal.
+
+
+                </p>
+
+                <div class="ingredients">
+                    <span>Boneless Chicken</span>
+                    <span>Lettuce</span>
+                    <span>Cucumber</span>
+                    <span>Onion</span>
+                    <span>Tomato</span>
+					<span>Carrot</span>
+					<span>Olive oil</span>
+                </div>
+
+                <div class="btn">
+				<a href="https://youtu.be/voHVFxMnMDw?si=lp2ce696agQY1M3F">
+                    <button>View Full Recipe</button>
+                </a>
+				</div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="related">
+            <h3>🎥 Related Videos</h3>
+
+            
+
+            <div class="video">
+                <a href="https://youtu.be/coiEGndoC8M?si=sB1BLJvu04I2zfP6" target="_blank">
+				<img src="https://i.pinimg.com/originals/3e/4c/52/3e4c5221a004b29432b0dd6554b1c22d.jpg">
+                <p>Creamy Pasta| Yummy</p>
+				</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Suggestions</title>
+
+<style>
+
+/* IMPORTANT RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f3f4f6;
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+    padding:40px 60px;
+}
+
+/* TITLE SECTION */
+.header{
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.header p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* LAYOUT */
+.layout{
+    display:flex;
+    gap:20px;
+    align-items:start-flex;
+}
+
+/* LEFT CARD */
+.card{
+    flex:2;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    display:flex;
+    gap:25px;
+}
+
+/* IMAGE */
+.card img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+/* CONTENT */
+.card-content{
+    flex:1;
+}
+
+.card-content h2{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* INGREDIENT TAGS */
+.ingredients{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.ingredients span{
+    background:#fdeaea;
+    color:#d33;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+}
+
+.btn button{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+.related{
+    flex:1;
+	
+}
+
+.related h3{
+    margin-bottom:15px;
+}
+
+.video{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.video img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.video p{
+    padding:10px;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .layout{
+        flex-direction:column;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .card img{
+        width:100%;
+        height:250px;
+    }
+}
+/* ===== ADVANCED ANIMATIONS ===== */
+
+/* Smooth page feel */
+html{
+scroll-behavior:smooth;
+}
+
+/* Page fade-in */
+body{
+animation:pageFade 1s ease;
+}
+
+@keyframes pageFade{
+from{opacity:0}
+to{opacity:1}
+}
+
+/* Card floating animation */
+.card{
+transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Image zoom hover */
+.card img{
+transition:transform .6s ease;
+}
+
+.card:hover img{
+transform:scale(1.08);
+}
+
+/* Ingredient tags animation */
+.ingredients span{
+transition:all .3s ease;
+}
+
+.ingredients span:hover{
+transform:scale(1.1);
+background:#ef4444;
+color:white;
+}
+
+/* Button animation */
+.btn button{
+transition:all .3s ease;
+}
+
+.btn button:hover{
+transform:scale(1.08);
+box-shadow:0 8px 20px rgba(239,68,68,0.5);
+}
+
+/* Related video hover */
+.video{
+transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.video:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Video image zoom */
+.video img{
+transition:transform .5s ease;
+}
+
+.video:hover img{
+transform:scale(1.07);
+}
+
+/* Scroll reveal animation */
+.hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    
+
+    <div class="layout">
+
+        <!-- LEFT -->
+        <div class="card">
+
+            <img src="https://tse4.mm.bing.net/th/id/OIP.gG1mFaD9P9Wb3o1B_RGZ2AHaEO?pid=Api&P=0&h=180" alt="Aloo">
+
+            <div class="card-content">
+                <h2>Aloo Tikka</h2>
+                <p>
+                    Aloo Tikka is a crispy and flavorful snack made with spiced mashed potatoes, shallow-fried to golden perfection — crunchy outside and soft inside.
+                </p>
+
+                <div class="ingredients">
+                    <span>Boiled potatoes</span>
+                    <span>Onions</span>
+                    <span>Garam Masala</span>
+                    <span>Coriander Leaves</span>
+                    <span>Corn flour</span>
+					<span>Salt</span>
+					<span>Ginger-Garlic Paste</span>
+					<span>Red-Chilli Powder</span>
+					<span>Green Chilli</span>
+                </div>
+
+                <div class="btn">
+				<a href="https://youtu.be/ipTEYc4xY54?si=-SVtiwbKVe1dsK5I">
+                    <button>View Full Recipe</button>
+					</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="related">
+            <h3>🎥 Related Videos</h3>
+
+            
+
+            <div class="video">
+                <a href="https://youtu.be/AYcoBXFVnng?si=SgYFXJItZRypWPez" target="_blank">
+				<img src="https://www.faskitchen.com/wp-content/uploads/2015/04/potato-cutlet.jpg">
+                <p>Aloo Tikka| Delicious | Yummy</p>
+				</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+/* SCROLL REVEAL ANIMATION */
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach((entry)=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".card, .video").forEach((el)=>{
+el.classList.add("hidden");
+observer.observe(el);
+});
+
+</script>
+</body>
+</html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Suggestions</title>
+
+<style>
+
+/* IMPORTANT RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f3f4f6;
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+    padding:40px 60px;
+}
+
+/* TITLE SECTION */
+.header{
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.header p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* LAYOUT */
+.layout{
+    display:flex;
+    gap:20px;
+    align-items:start-flex;
+}
+
+/* LEFT CARD */
+.card{
+    flex:2;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    display:flex;
+    gap:25px;
+}
+
+/* IMAGE */
+.card img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+/* CONTENT */
+.card-content{
+    flex:1;
+}
+
+.card-content h2{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* INGREDIENT TAGS */
+.ingredients{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.ingredients span{
+    background:#fdeaea;
+    color:#d33;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+}
+
+.btn button{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+.related{
+    flex:1;
+	
+}
+
+.related h3{
+    margin-bottom:15px;
+}
+
+.video{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.video img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.video p{
+    padding:10px;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .layout{
+        flex-direction:column;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .card img{
+        width:100%;
+        height:250px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    
+
+    <div class="layout">
+
+        <!-- LEFT -->
+        <div class="card">
+
+            <img src="https://i.pinimg.com/originals/69/7e/72/697e726542b4c8d8344323b6fc0b3a56.webp" alt="Mushroom">
+
+            <div class="card-content">
+                <h2>Garlic Mushroom</h2>
+                <p>
+                    Garlic Mushroom is a flavorful and aromatic dish made with sautéed mushrooms tossed in rich garlic butter, creating a juicy and delicious bite every time.
+                </p>
+
+                <div class="ingredients">
+                    <span>Button Mushroom</span>
+                    <span>Chilli flaxes</span>
+                    <span>Spices</span>
+                    <span>Coriander</span>
+                    <span>Black Pepper</span>
+					<span>Salt</span>
+					<span>Garlic</span>
+                </div>
+
+                <div class="btn">
+				<a href="https://youtu.be/oA6HnoqOXkI?si=-Pg4rEcWPOycAn-y">
+                    <button>View Full Recipe</button>
+					</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="related">
+            <h3>🎥 Related Videos</h3>
+
+            
+
+            <div class="video">
+                <a href="https://youtu.be/GhyVYlg_krg?si=e5vb_IArPhD_axHi" target="_blank">
+				<img src="https://i.pinimg.com/originals/5f/d8/9b/5fd89b807b6b1a587a01f6abe73cb92a.jpg">
+                <p>Garlic Mushroom | Delicious | Yummy</p>
+				</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Suggestions</title>
+
+<style>
+
+/* IMPORTANT RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f3f4f6;
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+    padding:40px 60px;
+}
+
+/* TITLE SECTION */
+.header{
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.header p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* LAYOUT */
+.layout{
+    display:flex;
+    gap:20px;
+    align-items:start-flex;
+}
+
+/* LEFT CARD */
+.card{
+    flex:2;
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    display:flex;
+    gap:25px;
+}
+
+/* IMAGE */
+.card img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+/* CONTENT */
+.card-content{
+    flex:1;
+}
+
+.card-content h2{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* INGREDIENT TAGS */
+.ingredients{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.ingredients span{
+    background:#fdeaea;
+    color:#d33;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:20px;
+}
+
+.btn button{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+.related{
+    flex:1;
+	
+}
+
+.related h3{
+    margin-bottom:15px;
+}
+
+.video{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.video img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.video p{
+    padding:10px;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .layout{
+        flex-direction:column;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .card img{
+        width:100%;
+        height:250px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    
+
+    <div class="layout">
+
+        <!-- LEFT -->
+        <div class="card">
+
+            <img src="https://hannase.com/wp-content/uploads/2024/06/449316114_450355171145886_7059960490280440001_n.jpg">
+
+            <div class="card-content">
+                <h2>Creamy Pasta</h2>
+                <p>
+                  Creamy Pasta is a rich and comforting dish made with perfectly cooked pasta tossed in a smooth, flavorful cream sauce. Every bite melts in your mouth with a delicious blend of herbs and spices.
+
+                </p>
+
+                <div class="ingredients">
+                    <span>Pasta</span>
+                    <span>Fresh Cream</span>
+                    <span>Butter</span>
+                    <span>Garlic</span>
+                    <span>Pepper</span>
+					<span>Cheese</span>
+					<span>Mixed Veggies</span>
+                </div>
+
+                <div class="btn">
+				<a href="https://youtu.be/AgPVyqm_ffQ?si=0IX2tJIiOsYDI9EB">
+                    <button>View Full Recipe</button>
+					</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="related">
+            <h3>🎥 Related Videos</h3>
+
+            
+
+            <div class="video">
+                <a href="https://youtu.be/AK0dcuydkiM?si=w4naWrnprQ_gd-1V" target="_blank">
+				<img src="https://thecozycook.com/wp-content/uploads/2021/09/Creamy-Sausage-Pasta.jpg">
+                <p>Creamy Pasta| Yummy</p>
+				</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
