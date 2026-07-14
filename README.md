@@ -8,15 +8,15 @@ Ingredish is a recipe finder website that helps users discover recipes using the
 -Quick recioe suggestions
 
 ## Technologies Used
--HTML
--CSS
-Javascript
+- HTML
+- CSS
+- Javascript
 
 ## Future Improvements
--AI-Powered recipe suggestions
--Ingredient search
--Nutrition information
--Save favourite recipes
+- AI-Powered recipe suggestions
+- Ingredient search
+- Nutrition information
+- Save favourite recipes
 
 ## Author
 Vasadi Devika
