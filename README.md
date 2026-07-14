@@ -7,7 +7,7 @@ Ingredish is a recipe finder website that helps users discover recipes using the
 -Easy-to-use interface
 -Quick recioe suggestions
 
-##Technologies Used
+## Technologies Used
 -HTML
 -CSS
 Javascript
